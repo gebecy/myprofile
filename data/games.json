@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-23T11:22:24.380232+00:00",
+  "updated_at": "2026-11-23T13:53:57.376604+00:00",
   "games": [
     {
       "appid": 2868840,
       "name": "Slay the Spire 2",
-      "playtime_2weeks": 1457,
+      "playtime_2weeks": 1433,
       "playtime_forever": 10785
     },
     {
@@ -18,18 +18,6 @@
       "name": "Below the Stone Demo",
       "playtime_2weeks": 149,
       "playtime_forever": 149
-    },
-    {
-      "appid": 2337200,
-      "name": "Ratopia Demo",
-      "playtime_2weeks": 71,
-      "playtime_forever": 71
-    },
-    {
-      "appid": 5387380,
-      "name": "Underbloom Demo",
-      "playtime_2weeks": 30,
-      "playtime_forever": 30
     }
   ]
 }
