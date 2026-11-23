@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
-from urllib.request import Request, urlopen
+from urllib.request import Request, urlopen,HTTPError
 
 def get_recently_played_games():
     params = urlencode({
@@ -23,9 +23,25 @@ def get_recently_played_games():
         url,
         headers={"User-Agent": "SteamProfileUpdater/1.0"}
     )
+    api_key = os.environ.get("STEAM_API_KEY", "")
+    steam_id = os.environ.get("STEAM_ID", "")
 
-    with urlopen(request, timeout=30) as response:
-        result = json.load(response)
+    print(f"API Key exists: {bool(api_key)}")
+    print(f"Steam ID exists: {bool(steam_id)}")
+    print(f"Steam ID length: {len(steam_id)}")
+    print(f"Steam ID format: {steam_id.isdigit()}")
+    
+    try:
+        with urlopen(request, timeout=30) as response:
+            result = json.load(response)
+
+    except HTTPError as e:
+        error_body = e.read().decode("utf-8", errors="replace")
+
+        print(f"Steam API HTTP Error: {e.code}")
+        print(f"Response body: {error_body}")
+
+        raise
 
     if "response" not in result:
         raise RuntimeError("Invalid Steam API response")
