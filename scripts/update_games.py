@@ -10,7 +10,7 @@ def get_recently_played_games():
     params = urlencode({
         "key": os.environ["STEAM_API_KEY"],
         "steamid": os.environ["STEAM_ID"],
-        "count": 10,
+        "count": 3,
     })
 
     url = (
