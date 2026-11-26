@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-25T01:42:20.487165+00:00",
+  "updated_at": "2026-11-26T01:15:30.918729+00:00",
   "games": [
     {
       "appid": 2868840,
       "name": "Slay the Spire 2",
-      "playtime_2weeks": 1425,
-      "playtime_forever": 10839
+      "playtime_2weeks": 1407,
+      "playtime_forever": 10859
     },
     {
       "appid": 2235200,
