@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-11-27T01:14:00.880949+00:00",
+  "updated_at": "2026-11-28T00:46:34.390479+00:00",
   "games": [
     {
       "appid": 2868840,
       "name": "Slay the Spire 2",
-      "playtime_2weeks": 1360,
-      "playtime_forever": 10861
+      "playtime_2weeks": 1137,
+      "playtime_forever": 10896
     },
     {
       "appid": 2235200,
       "name": "Neon Abyss 2",
-      "playtime_2weeks": 179,
-      "playtime_forever": 3795
+      "playtime_2weeks": 239,
+      "playtime_forever": 3856
     },
     {
       "appid": 2504970,
       "name": "Below the Stone Demo",
-      "playtime_2weeks": 149,
+      "playtime_2weeks": 134,
       "playtime_forever": 149
     }
   ]
